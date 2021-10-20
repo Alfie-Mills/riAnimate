@@ -1,0 +1,16 @@
+{
+  "name": "rianimate",
+  "version": "1.0.0",
+  "description": "Custom animations library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scss",
+    "animations",
+    "no-deps"
+  ],
+  "author": "Alfie Mills",
+  "license": "ISC"
+}

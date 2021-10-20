@@ -1,0 +1,39 @@
+$fades: ('up': translateY(100%), 'down': translateY(-100%), 'left': translateX(100%), 'right': translateX(-100%), 'in': '');
+
+@each $fade, $arg in $fades {
+    @keyframes fade-#{$fade} {
+        0% {
+            opacity: 0;
+            transform: $arg;
+    
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @each $fade, $arg in $fades {
+        .fade-#{$fade}{
+            animation: fade-#{$fade} 800ms ease-in-out 0s forwards;
+        }
+        .riAnimation_fade-#{$fade}{
+            opacity: 0;
+
+        }
+    }
+}
+
+//make animations not work on ie
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    [riAnimate]{
+        &, *{
+            animation: none !important;
+            opacity: 1;
+        }
+    }
+}
+
+@import "custom-animations"
