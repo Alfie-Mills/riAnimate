@@ -19,7 +19,7 @@ $fades: ('up': translateY(100%), 'down': translateY(-100%), 'left': translateX(1
         .fade-#{$fade}{
             animation: fade-#{$fade} 800ms ease-in-out 0s forwards;
         }
-        .riAnimation_fade-#{$fade}{
+        [class*="__preanimate-fade-#{$fade}"]{
             opacity: 0;
 
         }

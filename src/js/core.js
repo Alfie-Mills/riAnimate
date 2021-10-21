@@ -1,8 +1,8 @@
-function riAnimate(){
+function riAnimate(brand="rianimate"){
 
     // applies the pre animation class
-    document.querySelectorAll('[rianimate]').forEach(elem => { 
-        elem.classList.add( "riAnimation_" + elem.getAttribute('rianimate') );
+    document.querySelectorAll(`[${brand}]`).forEach(elem => { 
+        elem.classList.add( `${brand}__preanimate-` + elem.getAttribute(brand) );
     });
 
     let riAnimateObserver = new IntersectionObserver(entries => {
@@ -12,7 +12,7 @@ function riAnimate(){
             // If the element is visible
             if (entry.isIntersecting) {
                 // Add the animation class
-                entry.target.classList.add( entry.target.getAttribute('rianimate') );
+                entry.target.classList.add( entry.target.getAttribute(brand) );
 
                 // Remove observer once animation class has been applied
                 riAnimateObserver.unobserve(entry.target);
@@ -21,6 +21,6 @@ function riAnimate(){
     });
     
     // Tell the observer which elements to track
-    document.querySelectorAll('[rianimate]').forEach(elem => { riAnimateObserver.observe(elem) });
+    document.querySelectorAll(`[${brand}]`).forEach(elem => { riAnimateObserver.observe(elem) });
 }
 export default riAnimate;
