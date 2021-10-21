@@ -1,16 +1,22 @@
 {
   "name": "rianimate",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Custom animations library",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "dist/js/core.js",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alfie-Mills/riAnimate"
   },
   "keywords": [
     "scss",
     "animations",
     "no-deps"
   ],
-  "author": "Alfie Mills",
+  "author": {
+    "name": "Alfie Mills",
+    "email": "alfie.mills@outlook.com",
+    "url": "https://alfimeills.co.uk/"
+  },
   "license": "ISC"
 }
