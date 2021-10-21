@@ -1,6 +1,6 @@
 {
   "name": "rianimate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Custom animations library",
   "main": "dist/js/core.js",
 
