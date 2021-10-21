@@ -1,4 +1,4 @@
-export function riAnimate(){
+function riAnimate(){
 
     // applies the pre animation class
     document.querySelectorAll('[rianimate]').forEach(elem => { 
@@ -23,3 +23,4 @@ export function riAnimate(){
     // Tell the observer which elements to track
     document.querySelectorAll('[rianimate]').forEach(elem => { riAnimateObserver.observe(elem) });
 }
+export default riAnimate;
