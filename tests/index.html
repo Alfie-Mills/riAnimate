@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/core.css">
+    <title>riAnimate Test</title>
+</head>
+<body>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+        }
+        .card{
+            height: 400px;
+            border-radius: 4px;
+            width: 100%;
+            background-color: blue;
+        }
+    </style>
+
+    <div id="grid" class="grid">
+        
+    </div>
+
+    <script src="./js/core.js"></script>
+    <script>
+        let elem = document.createElement('div');
+        elem.className = 'card';
+        elem.setAttribute('rianimate', 'fade-up');
+
+        for(let i = 0; i < 300; i++){
+            document.getElementById('grid').appendChild(elem.cloneNode(true));
+        }
+
+        riAnimate('rianimate', {threshold: 0.5})
+
+    </script>
+    
+    
+</body>
+</html>

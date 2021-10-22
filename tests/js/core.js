@@ -25,3 +25,4 @@ function riAnimate(brand="rianimate", options){
 }
 
 export default riAnimate;
+//# sourceMappingURL=core.js.map
