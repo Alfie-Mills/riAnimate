@@ -1,6 +1,6 @@
 {
   "name": "rianimate",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Custom animations library",
   "main": "dist/js/core.js",
   "repository": {
@@ -22,7 +22,7 @@
     "watch": "gulp serve"
   },
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
